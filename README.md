@@ -8,7 +8,8 @@ Technologies used: -**CSS**
                     -**HTML** 
                     -**JavaScript** 
 
-Key Sections: - **Home** – Introduction and brief overview  
-              - **About** – Background, interests, and goals  
-              - **Projects** – Featured applications with descriptions  
-              - **Contact** – Ways to get in touch 
+Key Sections: 
+- **Home** – Introduction and brief overview  
+- **About** – Background, interests, and goals  
+- **Projects** – Featured applications with descriptions  
+- **Contact** – Ways to get in touch 
