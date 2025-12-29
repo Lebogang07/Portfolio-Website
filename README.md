@@ -4,9 +4,10 @@ The website serves as a platform for showcasing my projects, technical skills, a
 The portfolio was created with simplicity and clarity in mind, emphasizing clean layouts, responsiveness, and an easy-to-navigate user experience. 
 It focuses on specific projects that demonstrate my front-end development skills and practical application of web technology.
 
-Technologies used: -**CSS**
-                    -**HTML** 
-                    -**JavaScript** 
+Technologies used: 
+-**CSS**
+-**HTML** 
+-**JavaScript** 
 
 Key Sections: 
 - **Home** – Introduction and brief overview  
