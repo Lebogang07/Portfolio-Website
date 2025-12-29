@@ -5,9 +5,9 @@ The portfolio was created with simplicity and clarity in mind, emphasizing clean
 It focuses on specific projects that demonstrate my front-end development skills and practical application of web technology.
 
 Technologies used: 
--**CSS**
--**HTML** 
--**JavaScript** 
+- **CSS**
+- **HTML** 
+- **JavaScript** 
 
 Key Sections: 
 - **Home** – Introduction and brief overview  
