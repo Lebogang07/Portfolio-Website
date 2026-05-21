@@ -12,10 +12,10 @@
     <nav class="navbar">
         <div class="logo"> Portfolio </div>
 
-         <!-- HAMBURGER BUTTON -->
-    <div class="hamburger" id="hamburger">
-        ☰
-    </div>
+         
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
 
         <ul class="nav-links" id="nav-links">
             <li><button class="nav-btn home-btn" style="animation-delay:0.4s;">Home</button></li>
@@ -340,11 +340,11 @@ observer.observe(aboutSection);
   });
 
   const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+  const navLinks = document.getElementById("nav-links");
 
-    hamburger.addEventListener("click", () => {
+  hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
-    });
+  });
 
 
 

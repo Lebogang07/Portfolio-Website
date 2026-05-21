@@ -382,16 +382,12 @@ button:hover{
 }
 
 
-/* HAMBURGER */
-
 .hamburger{
     display: none;
     font-size: 30px;
     cursor: pointer;
     color: white;
 }
-
-/* MOBILE MENU */
 
 @media (max-width: 768px){
 
