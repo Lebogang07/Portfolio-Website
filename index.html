@@ -11,7 +11,13 @@
 
     <nav class="navbar">
         <div class="logo"> Portfolio </div>
-        <ul class="nav-links">
+
+         <!-- HAMBURGER BUTTON -->
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+        <ul class="nav-links" id="nav-links">
             <li><button class="nav-btn home-btn" style="animation-delay:0.4s;">Home</button></li>
             <li><button class="nav-btn about-btn" style="animation-delay:0.6s;">About Me</button></li>
             <li><button class="nav-btn skills-btn" style="animation-delay:0.8s;">Skills</button></li>
@@ -71,14 +77,25 @@
 
             <div class="about-text slide-right">
                 <p> 
-                    I am a recent BSc Information Technology graduate from North-West University with a strong foundation in software development and system design. 
+                    I am a recent BSc Information Technology graduate from North-West University with a strong foundation in software development and system design.
+                    Throughout my academic journey, I developed a passion for technology and problem-solving, which inspired me to pursue a career in software development.
                     I am passionate about building applications using modern web technologies and solving real-world problems through code.
+                   I enjoy turning ideas into functional, user-friendly solutions and continuously learning new technologies to improve my skills. 
+                   
                 </p>
 
                 <p>
-                   I enjoy turning ideas into functional, user-friendly solutions and continuously learning new technologies to improve my skills. 
-                   As an aspiring software developer, I am eager to contribute to real-world projects, collaborate with innovative teams, and grow in a dynamic development environment.
+                    During my studies, I worked on various academic and personal projects that strengthened my understanding of programming concepts, responsive web design, databases, and application development. 
+                    These experiences helped me develop valuable skills such as teamwork, analytical thinking, debugging, and writing clean, maintainable code. 
+                    I am particularly interested in building modern web applications and learning how technology can be used to solve real-world challenges effectively.
+
                 </p>
+
+                <p>
+                    I am highly motivated, adaptable, and eager to grow as a developer in a professional environment. I enjoy learning new tools and frameworks, taking on challenges, and continuously improving both my technical and problem-solving abilities. 
+                    As an aspiring software developer, I aim to contribute to innovative projects, collaborate with forward-thinking teams, and gain valuable industry experience while building impactful digital solutions.
+
+                </p>    
             </div>
 
         </div>
@@ -321,6 +338,16 @@ observer.observe(aboutSection);
   contactBtn.addEventListener('click', () => {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
   });
+
+  const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+
+
 </script>
 
 </body>

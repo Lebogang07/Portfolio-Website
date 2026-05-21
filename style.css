@@ -2,11 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: black ;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1{
@@ -37,7 +42,7 @@ p2{
     top: 0;
     z-index: 1000;
     background: black;
-    padding: 20px;
+    padding: 15px 30px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -63,7 +68,6 @@ p2{
 }
 
 .logo {
-    font-size: 20px;
     font-weight: 600;
     font-size: 30px;
     padding: 25px 10px;
@@ -71,8 +75,9 @@ p2{
 }
 
 .picture{
-    width: 400px;
-    height: 420px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin-top: 20px;
     margin-right: 400px;
     object-fit: cover;
@@ -81,23 +86,28 @@ p2{
 }
     
 .about-img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 40%;
     border: 2px solid white;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center; 
     gap: 20px;
+    flex-wrap: wrap;
+    padding: 80px 40px;
 }
 
 .about-container{
      display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .about-section{
@@ -168,7 +178,8 @@ button:hover{
 
 .about-text{
     max-width: 600px;
-    margin-bottom: 200px;
+    margin-bottom: 0;
+    text-align: left;
     
 }
 
@@ -185,6 +196,7 @@ button:hover{
     margin: 0 auto;
     line-height: 1.7; 
     margin-bottom: 25px;
+    padding: 0 20px;
 }
 
 .skill-item {
@@ -211,6 +223,7 @@ button:hover{
     right: 0;               
     transform: translateX(100%); 
     width: 300px;
+    max-width: 100%;
     height: 100vh;
     background: black;
     padding: 30px;
@@ -252,11 +265,13 @@ button:hover{
     gap: 20px;               
     flex-wrap: wrap;         
     justify-content: center; 
+    padding: 20px;
 }
 
 
 .project-card {
-    width: 450px;            
+    max-width: 450px;  
+    width: 100%;          
     border: 2px solid  rgb(73, 0, 128);
     border-radius: 12px;
     padding: 15px;
@@ -291,7 +306,9 @@ button:hover{
 .calculator-img{
     width: 100%;
     height: 180px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .project-content h3 {
@@ -306,6 +323,7 @@ button:hover{
     margin-top: 15px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -361,6 +379,43 @@ button:hover{
     opacity: 1;
     transform: translateY(0); 
   }
+}
+
+
+/* HAMBURGER */
+
+.hamburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* MOBILE MENU */
+
+@media (max-width: 768px){
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 10px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
 }
 
 
