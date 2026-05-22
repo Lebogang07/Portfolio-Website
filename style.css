@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 10%;
-}
-
 *{
     box-sizing: border-box;
 }
@@ -20,6 +12,13 @@ body{
     color: white;
     margin: 0;
     overflow-x: hidden;
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
 }
 
 h1{
@@ -46,8 +45,10 @@ p2{
 }
 
 .navbar{
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
     background: black;
     padding: 15px 30px;
@@ -55,7 +56,6 @@ p2{
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    gap: 20px;
 }
 
 .nav-links {
@@ -420,6 +420,28 @@ button:hover{
 
     .nav-links li{
         margin: 10px 0;
+    }
+
+    .header-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 40px;
+    }
+
+    .picture{
+        margin-right: 0;
+        max-width: 300px;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    .typewriter{
+        white-space: normal;
+        border-right: none;
+        animation: none;
+        width: 100%;
     }
 }
 
