@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -47,6 +55,7 @@ p2{
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    gap: 20px;
 }
 
 .nav-links {
@@ -382,7 +391,7 @@ button:hover{
 }
 
 
-.hamburger{
+.menu-toggle{
     display: none;
     font-size: 30px;
     cursor: pointer;
@@ -391,7 +400,7 @@ button:hover{
 
 @media (max-width: 768px){
 
-    .hamburger{
+    .menu-toggle{
         display: block;
     }
 
